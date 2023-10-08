@@ -1,0 +1,48 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /*Padronização da pagina*/
+}
+
+body {
+    background-image: -webkit-linear-gradient(right, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
+    background-image: -moz-linear-gradient(right, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
+    background-image: -o-linear-gradient(right, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
+    background-image: linear-gradient(to left, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
+}
+
+.title-pokedex{
+    display: flex;
+    border: 1px solid #49D0B0;
+    border-radius: 25px;
+    padding: .3rem 1rem;
+    color: #49D0B0;
+    margin: 7px;
+    text-align: center;
+}
+
+.image-pokedex{
+    margin: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+h2 {
+    color: #49D0B0;
+}
+.content {
+    height: 100vh; /*tamanho da tela inteira*/
+    width: 100vh; /*Quando limitar ele ir aumentando e adptando na tela*/
+    padding: 1rem; /*é uma medida relativa e flexivel(baseada no tamanho da fonte*/
+    background-color: #ffffff60;
+}
+
+/*tamanho da tela media*/
+@media screen and (min-width: 768px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
